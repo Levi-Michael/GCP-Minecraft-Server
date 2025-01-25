@@ -47,7 +47,7 @@ module "firewall" {
   }
   ingress_rules = {
     allow-ssh = {
-      description   = "Allow Minecraft ssh traffic"
+      description   = "Allow Minecraft ssh traffic from google"
       direction     = "INGRESS"
       priority      = 1000
       source_ranges = ["35.235.240.0/20"]
@@ -66,7 +66,7 @@ module "firewall" {
       description   = "Allow Minecraft traffic"
       direction     = "INGRESS"
       priority      = 1000
-      source_ranges = ["0.0.0.0/0"] # Update this with trusted IPs or reduce the range
+      source_ranges = var.allowed_range # Update this with trusted IPs or reduce the range
       rules = [
         {
           protocol = "tcp"

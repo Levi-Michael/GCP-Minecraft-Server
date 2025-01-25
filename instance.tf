@@ -16,10 +16,6 @@ module "instance-group" {
       type  = "pd-ssd"
     }
   }
-  # service_account = {
-  #   email  = var.service_account.email
-  #   scopes = ["https://www.googleapis.com/auth/cloud-platform"]
-  # }
   metadata = {
     "startup-script" = file("DATA/setup_minecraft_server.sh")
   }

@@ -31,3 +31,8 @@ variable "instance_type" {
   description = "Instance Type"
   default     = "e2-medium"
 }
+
+variable "allowed_range" {
+  description = "Iallowed_range"
+  default     = ["0.0.0.0/0"]
+}

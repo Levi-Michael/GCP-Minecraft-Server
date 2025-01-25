@@ -38,6 +38,18 @@ sudo -u $MINECRAFT_USER wget $SERVER_JAR_URL -O $SERVER_JAR
 echo "Accepting EULA..."
 echo "eula=true" | sudo -u $MINECRAFT_USER tee $MINECRAFT_DIR/eula.txt
 
+# Create OPS
+echo "Update OPS.."
+echo "[
+    {
+       "uuid":"fb2468a2-4c35-407c-97bb-27ec850491e1",
+       "name":"Karnafun",
+       "level":4
+    } 
+ ]" | sudo -u $MINECRAFT_USER tee $MINECRAFT_DIR/ops.json
+
+# echo "Print OPS" | cat $MINECRAFT_DIR/ops.json
+
 # Run the server to generate initial files
 echo "Running the server to generate files..."
 sudo -u $MINECRAFT_USER java -Xmx${JAVA_RAM} -Xms${JAVA_RAM} -jar $SERVER_JAR nogui || true
