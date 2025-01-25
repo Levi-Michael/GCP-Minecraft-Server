@@ -7,7 +7,7 @@ MINECRAFT_USER="minecraft"
 MINECRAFT_DIR="/home/$MINECRAFT_USER/server"
 SERVER_JAR_URL="https://piston-data.mojang.com/v1/objects/4707d00eb834b446575d89a61a11b5d548d8c001/server.jar"
 SERVER_JAR="server.jar"
-JAVA_RAM="2G"
+JAVA_RAM="3G"
 
 # Update and install dependencies
 echo "Updating system and installing dependencies..."
