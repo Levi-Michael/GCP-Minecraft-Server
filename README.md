@@ -1,5 +1,5 @@
 # Minecraft Server Deployment on GCP (Java Edition)
-
+![](./DATA/Minecraft.jpg)
 This repository contains the necessary Terraform scripts to deploy a **Minecraft Java Edition Server** on Google Cloud Platform (GCP). It is designed to simplify the process, making it accessible for both beginners and experienced DevOps professionals.
 
 ## Prerequisites
