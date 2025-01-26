@@ -99,8 +99,8 @@ server_ip = "34.123.45.67"
 ### 6. Connect to Your Minecraft Server
 
 1. Launch the **Minecraft Java Edition** client.
-2. Go to **Multiplayer** > **Add Server**. (The port for the server is 25565)
-3. Enter the server IP address retrieved from the Terraform output.
+2. Go to **Multiplayer** > **Add Server**.
+3. Enter the server IP address retrieved from the Terraform output, The port for the server is 25565.
 4. Join the server and enjoy!
 
 ## Notes
