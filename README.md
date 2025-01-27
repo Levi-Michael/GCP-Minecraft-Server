@@ -18,7 +18,17 @@ Before you begin, ensure you have the following:
      gcloud auth login
      gcloud auth application-default login
      ```
-4. **Terraform Variables File**:
+4. **Minecraft Requirements**
+    - By default `e2-medium` is deployed with 2 Core and 4GB RAM - that good for 5-10 players cost of 25-30$ Price per month.
+    - You can change the instance_type for batter one if you have bigger amount of players.
+    - Here the Minecraft Requirements-
+
+      ![Requirements](./DATA/Requirements.png)
+    - ⚠️ Make sure you update the amount of RAM of the Minecraft server as you use bigger VM.
+    - Edit `setup_minecraft_server.sh` at DATA folder
+    - At `setup_minecraft_server.sh` line 10
+      - `JAVA_RAM="3G"` Change for 4G/6G/8G/16G
+5. **Terraform Variables File**:
    - Create a `terraform.tfvars` file in the root of this repository. Example content:
      ```hcl
      prefix          = "tf"
@@ -31,7 +41,7 @@ Before you begin, ensure you have the following:
      allowed_range   = ["0.0.0.0/0"]
      ```
      Replace `your-project-id` and `your-billing-account-id` with your GCP project and billing account information.
-5. **Minecraft user uuid- Ops**:
+6. **Minecraft user uuid- Ops**:
     - Ops UUID for Manage your Server 
     - Find you UUID at [MCUUID](https://mcuuid.net/)
     - Edit `setup_minecraft_server.sh` at DATA folder
