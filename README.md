@@ -144,5 +144,3 @@ The following outputs will be generated after a successful deployment:
 ## Disclaimer
 
 This project is intended for educational purposes. Ensure compliance with GCP terms of service and monitor your usage to avoid unexpected charges.
-
-
